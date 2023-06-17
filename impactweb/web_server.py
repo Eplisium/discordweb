@@ -378,9 +378,3 @@ if __name__ == '__main__':
         finally:
             loop.run_until_complete(bot.close())
             loop.close()
-
-# Your environment variable values (for reference only, do not include in the code)
-# CLIENT_SECRET = "qL6y468vzzkifPNchV67w6-6dAr13yb7"
-# CLIENT_ID = "1095303701247316029"
-# redirect url = "http://localhost:5000/callback"
-# key = b'hI15l_qLivM628kMs4Ct-Wdlz3ZGzS_SYSXpjdTZr1c='

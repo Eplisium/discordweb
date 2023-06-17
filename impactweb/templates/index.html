@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impact Discord Web</title>
+    <style>
+        :root {
+            --primary-color: #1b253a;
+            --secondary-color: #8fb7ff;
+            --light-grey: #f3f3f3;
+            --medium-grey: #c4c4c4;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-grey);
+        }
+
+        .container {
+            height: 100%;
+        }
+
+        .server-box {
+            background-color: var(--medium-grey);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .server-info {
+            font-size: 1.1rem;
+        }
+
+        .container-fluid {
+            height: 100%;
+            padding: 0;
+        }
+
+        .row {
+            height: 100%;
+            margin: 0;
+        }
+
+        .col-md-6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            background-color: var(--primary-color);
+            padding: 50px;
+        }
+
+        .col-md-6 h1 {
+            font-size: 4rem;
+            margin-top: 0;
+        }
+
+        .card {
+            background-color: #f8f8f8;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .card p {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .card a:hover {
+            background-color: #6e87c6;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .logo {
+            width: 500px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    </style>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="server-box">
+        <div class="server-info">
+            <h2>Server Information</h2>
+            <p>Name: {{ server.name }}</p>
+            <p>ID: {{ server.id }}</p>
+            <p>Member Count: {{ server.member_count }}</p>
+            <p>User Count: {{ user_count }}</p>
+            <p>Bot Count: {{ bot_count }}</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>
+                    <a href="./">
+                        <img
+                            src="https://i.imgur.com/u13wT9C.png"
+                            alt="Impact Discord Web Logo"
+                            class="logo"
+                        />
+                    </a>
+                </h1>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <h2>Get started</h2>
+                    <p>
+                        Ready to go? Click the link below to visit our users page.
+                    </p>
+                    <a href="api/users">Users Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2023 Impact Web. All rights reserved.</p>
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBvF3enlXCW2p++Dl2VZ2zVrJXJhDHW7NFRW3YrVbFpjjhlP"
+        crossorigin="anonymous"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-GLhlTQ8iVG93xB0t97Bmz1ubtr8lZvkB53A5u0TOmGTf7zW4BiIo9X4ROhU9Dxbw"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>

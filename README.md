@@ -21,7 +21,7 @@ DiscordWeb Bot is designed to display Discord user information and recent activi
 
 1. **Clone the Repository:**
    ```bash
-   git clone [<repository-url>](https://github.com/Eplisium/discordweb)
+   git clone https://github.com/Eplisium/discordweb
    cd impactweb
    ```
 

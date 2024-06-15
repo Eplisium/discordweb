@@ -21,8 +21,8 @@ DiscordWeb Bot is designed to display Discord user information and recent activi
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone [<repository-url>](https://github.com/Eplisium/discordweb)
+   cd impactweb
    ```
 
 2. **Update Server ID and Get User Functions:**
@@ -32,18 +32,19 @@ DiscordWeb Bot is designed to display Discord user information and recent activi
    Modify the `wutil/webconfig.py` file to match your settings. Refer to the [configuration screenshot](https://prnt.sc/rT4LUOOBkZfP).
 
 4. **Run the Bot:**
-   ```bash
-   python bot.py
-   ```
+   Using the `web_runner.bat` to start the bot/app. 
 
 ### Configuration
 
 Update the `wutil/webconfig.py` file with the necessary settings:
 ```python
-# Example Configuration
-DISCORD_TOKEN = 'your-discord-token'
-SERVER_ID = 'your-server-id'
-# Other necessary configurations
+bot_token3 = '*************'  # Enter your token
+client_id = ******** # Enter your client id from the O2Auth page in the discord dev page.
+client_secret = "*******" # Enter your client secret from the O2Auth page in the discord dev page.
+redirect_uris = [ #Set your redirects here from https://prnt.sc/Mv7x4vzUMn_N   PS. Yes I understand the typo. I've accidently done that through out the whole code.
+    'http://impactdiscord.ddns.net:5000/callback',
+    'http://localhost:5000/callback'
+]  
 ```
 
 ## Usage
